@@ -1,0 +1,31 @@
+{
+  "name": "number-to-cyrillic",
+  "version": "1.0.0",
+  "description": "Convert number to words.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vshashkov/number-to-cyrillic"
+  },
+  "keywords": [
+    "Number",
+    "Convert",
+    "Cyrillic",
+    "Words",
+    "Number",
+    "to",
+    "words",
+    "Number",
+    "to",
+    "cyrillic"
+  ],
+  "author": "Vadim Shashkov",
+  "license": "nolicense",
+  "bugs": {
+    "url": "https://github.com/vshashkov/number-to-cyrillic/issues"
+  },
+  "homepage": "https://github.com/vshashkov/number-to-cyrillic#README"
+}
