@@ -1,19 +1,18 @@
 var expect = require('chai').expect;
-var number2String = require('../index').toWords;
+var number2String = require('../index').convert;
 
-describe('Test all test-cases', () => {
-
-  it('should throw an error when paste incorrect string', () => {
+describe('Test all test-cases', function () {
+  it('should throw an error when paste incorrect string', function () {
     try {
-      number2String('string')
+      number2String('string');
     } catch (error) {
       expect(error.message).to.equal('String should be a valid number!');
     }
   });
 
-  it('should throw an error when paste an empty string', () => {
+  it('should throw an error when paste an empty string', function () {
     try {
-      number2String('')
+      number2String('');
     } catch (error) {
       expect(error.message).to.equal('String should be a valid number!');
     }
