@@ -18,5 +18,8 @@ converter.convert(21); // => “Двадцять одна гривня”
 
 ### Change Log
 
-##### 1.0.0
+##### 1.0.2
+- Improve test coverage
+
+##### 1.0.1
 - Initial release
