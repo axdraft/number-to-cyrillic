@@ -13,12 +13,14 @@ This library supports only Ukrainian language so far.
 Converts an integer into a string.
 ```js
 var numberToString = require('number-to-cyrillic');
-numberToString.convert(21); // => “Двадцять одна гривня”
+
+numberToString.convert(21); 
+// “Двадцять одна гривня”
 ```
 
 ### Change Log
 
-##### 1.0.2
+##### 1.0.*
 - Improve test coverage
 
 ##### 1.0.1
