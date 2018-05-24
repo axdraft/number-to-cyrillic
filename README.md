@@ -15,7 +15,7 @@ This library supports only Ukrainian language so far.
 
 ### `.convert(number[, options])`
 
-Converts an integer into a string. Optionally You can decide whether to display output with currency or not
+Converts an integer into a string. Optionally you can decide whether to display output with currency or not
 by adding an object with property `currency: false`. For example:
 
 ```js
@@ -33,10 +33,16 @@ See detailed description of all available options below:
 
 | Option name | Description                                                                               | Default value        |
 |-------------|-------------------------------------------------------------------------------------------|----------------------|
-| currency    | By setting a value for this option to `false` You might remove displaying currency name beside the number | **true** |
+| currency    | By setting a value for this option to `false` you might remove displaying currency name beside the number | **true** |
 
 
 ## Change Log
+
+### 1.1.*
+
+- Ability to convert numbers to string either like currency or just like plain number by adding an option
+- Update README.md with ROADMAP and options description
+- Add more tests
 
 ### 1.0.*
 
@@ -48,19 +54,15 @@ See detailed description of all available options below:
 
 ## Roadmap
 
-#### 1.0.*
-
-- Ability to convert numbers to string either like currency or just like plain number
-
-#### 1.1.*
+#### 1.2.*
 
 - Add the abbility to make the first letter in uppercase by choise of the user
 
-#### 1.2.*
+#### 1.3.*
 
 - Extended support of decimal numbers till 0.000001
 
-#### 1.3.*
+#### 1.4.*
 
 - Add suport of other popular currencies (USD, EUR, GBP, RUB)
 
