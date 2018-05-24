@@ -1,0 +1,142 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 8,
+    "sourceType": "module"
+  },
+  "env": {
+    "es6": true
+  },
+  "rules": {
+    "indent": [
+      "error",
+      2
+    ],
+    "no-sparse-arrays": "error",
+    "no-template-curly-in-string": "error",
+    "func-call-spacing": [
+      "error",
+      "never"
+    ],
+    "func-style": [
+      "error",
+      "declaration"
+    ],
+    "no-debugger": "error",
+    "valid-typeof": "error",
+    "curly": [
+      "error",
+      "all"
+    ],
+    "dot-location": [
+      "error",
+      "property"
+    ],
+    "dot-notation": "error",
+    "newline-after-var": [
+      "error",
+      "always"
+    ],
+    "no-else-return": "error",
+    "no-eval": "error",
+    "no-extend-native": "error",
+    "no-extra-bind": "error",
+    "no-implied-eval": "error",
+    "no-labels": "error",
+    "no-loop-func": "error",
+    "no-multi-spaces": [
+      "error",
+      {
+        "exceptions": {
+          "VariableDeclarator": true,
+          "ImportDeclaration": true,
+          "Property": true
+        }
+      }
+    ],
+    "key-spacing": [
+      "error",
+      {
+        "beforeColon": false,
+        "afterColon": true,
+        "mode": "minimum"
+      }
+    ],
+    "space-infix-ops": [
+      "error",
+      {
+        "int32Hint": true
+      }
+    ],
+    "space-in-parens": [
+      "error",
+      "never"
+    ],
+    "space-unary-ops": "error",
+    "keyword-spacing": [
+      "error"
+    ],
+    "no-new-wrappers": "error",
+    "no-proto": "error",
+    "no-redeclare": "error",
+    "no-self-assign": [
+      "error",
+      {
+        "props": true
+      }
+    ],
+    "no-throw-literal": "error",
+    "no-with": "error",
+    "comma-spacing": [
+      "error",
+      {
+        "before": false,
+        "after": true
+      }
+    ],
+    "camelcase": [
+      "error",
+      {
+        "properties": "never"
+      }
+    ],
+    "array-bracket-spacing": [
+      "error",
+      "never"
+    ],
+    "block-spacing": "error",
+    "eol-last": [
+      "error",
+      "always"
+    ],
+    "new-parens": "error",
+    "newline-per-chained-call": [
+      "error",
+      {
+        "ignoreChainWithDepth": 2
+      }
+    ],
+    "no-lonely-if": "error",
+    "no-mixed-spaces-and-tabs": "error",
+    "no-multiple-empty-lines": [
+      "error",
+      {
+        "max": 1,
+        "maxEOF": 1
+      }
+    ],
+    "no-trailing-spaces": "error",
+    "prefer-const": "error",
+    "arrow-spacing": "error",
+    "quotes": [
+      "error",
+      "single",
+      {
+        "allowTemplateLiterals": true
+      }
+    ],
+    "object-curly-newline": [
+      "error",
+      "always"
+    ]
+  }
+}

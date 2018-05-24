@@ -4,7 +4,9 @@
   "description": "Convert number to words.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --reporter nyan"
+    "test": "mocha --reporter nyan",
+    "lint": "eslint ./",
+    "lint:fix": "eslint ./ --fix"
   },
   "repository": {
     "type": "git",
@@ -31,5 +33,8 @@
   "devDependencies": {
     "chai": "^4.1.2",
     "mocha": "^5.1.1"
+  },
+  "dependencies": {
+    "eslint": "^4.19.1"
   }
 }
