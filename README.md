@@ -11,9 +11,10 @@ This library supports only Ukrainian language so far.
 
 ## API
 
-### `.convert(number)`
+### `.convert(number[, options])`
 
-Converts an integer into a string.
+Converts an integer into a string. Optionally You can decide whether to display output with currency or not
+by adding an object with property `currency: false`. By default, this property is set to `true`.
 
 ```js
 var numberToString = require('number-to-cyrillic');
