@@ -3,7 +3,6 @@
 # Number To Cyrillic
 
 [![npm version](https://badge.fury.io/js/number-to-cyrillic.svg)](https://badge.fury.io/js/number-to-cyrillic)
-[![npm](https://img.shields.io/npm/dt/express.svg)](https://www.npmjs.com/package/number-to-cyrillic)
 
 Converts number to cyrillic.
 This library supports only Ukrainian language so far.
