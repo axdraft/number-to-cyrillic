@@ -4,10 +4,10 @@
 Converts number to cyrillic.
 This library supports only Ukrainian language so far.
 
-### Install
+## Install
 `npm install number-to-cyrillic`
 
-### API
+## API
 
 #### `.convert(number)`
 Converts an integer into a string.
@@ -18,7 +18,7 @@ numberToString.convert(21);
 // “Двадцять одна гривня”
 ```
 
-### Change Log
+## Change Log
 
 ##### 1.0.*
 - Improve test coverage
@@ -26,7 +26,9 @@ numberToString.convert(21);
 ##### 1.0.1
 - Initial release
 
-### Roadmap
+## Roadmap
+
+### *version 1*
 
 #### 1.0.*
 - Ability to convert numbers to string either like currency or just like plain number
@@ -39,6 +41,8 @@ numberToString.convert(21);
 
 #### 1.3.*
 - Add suport of other popular currencies (USD, EUR, GBP, RUB)
+
+### *version 2*
 
 #### 2.0.*
 - Ability to convert date to string (DD.MM.YYYY and DD.MM along with MM.YYYY)
