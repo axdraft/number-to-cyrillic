@@ -2,6 +2,9 @@
 
 # Number To Cyrillic
 
+[![npm version](https://badge.fury.io/js/number-to-cyrillic.svg)](https://badge.fury.io/js/number-to-cyrillic)
+[![npm](https://img.shields.io/npm/dt/express.svg)](https://www.npmjs.com/package/number-to-cyrillic)
+
 Converts number to cyrillic.
 This library supports only Ukrainian language so far.
 
@@ -14,14 +17,25 @@ This library supports only Ukrainian language so far.
 ### `.convert(number[, options])`
 
 Converts an integer into a string. Optionally You can decide whether to display output with currency or not
-by adding an object with property `currency: false`. By default, this property is set to `true`.
+by adding an object with property `currency: false`. For example:
 
 ```js
 var numberToString = require('number-to-cyrillic');
 
 numberToString.convert(21);
-// “Двадцять одна гривня”
+// “Двадцять одна гривня нуль копійок”
+
+numberToString.convert(34.52, {
+  currency: false
+});
+// "Тридцять чотири цілих п'ятдесят дві сотих"
 ```
+See detailed description of all available options below:
+
+| Option name | Description                                                                               | Default value        |
+|-------------|-------------------------------------------------------------------------------------------|----------------------|
+| currency    | By setting a value for this option to `false` You might remove displaying currency name beside the number | **true** |
+
 
 ## Change Log
 
@@ -34,8 +48,6 @@ numberToString.convert(21);
 - Initial release
 
 ## Roadmap
-
-### *version 1*
 
 #### 1.0.*
 
@@ -52,8 +64,6 @@ numberToString.convert(21);
 #### 1.3.*
 
 - Add suport of other popular currencies (USD, EUR, GBP, RUB)
-
-### *version 2*
 
 #### 2.0.*
 
