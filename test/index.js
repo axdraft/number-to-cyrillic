@@ -19,7 +19,7 @@ describe('Test all test-cases', function () {
   });
 
   it('should display correct value for 0', function () {
-     expect(number2String('0')).to.equal('Нуль гривень');
+    expect(number2String('0')).to.equal('Нуль гривень');
   });
 
   it('should display correct value for 1', function () {
