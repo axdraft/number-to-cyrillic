@@ -7,14 +7,15 @@ var numberToString = require('./lib/numberToString');
  * = = = = = = = = = = =
  *
  * @param value
+ * @param options
  * @returns string
  */
 
-exports.convert = function (value) {
+exports.convert = function (value, options) {
   var stringRegExp = new RegExp(/^[A-Za-z]+$/);
 
   if (stringRegExp.test(value))
   { throw new Error('String should be a valid number!'); }
 
-  return numberToString(value);
+  return numberToString(value, options);
 };
