@@ -1,7 +1,5 @@
 [![NPM](https://nodei.co/npm/number-to-cyrillic.png)](https://www.npmjs.com/package/number-to-cyrillic)
 
-[![NPM](https://nodei.co/npm/number-to-cyrillic.png)](https://www.npmjs.com/package/number-to-cyrillic)
-
 # Number To Cyrillic
 
 Converts number to cyrillic.
