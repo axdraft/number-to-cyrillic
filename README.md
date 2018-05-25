@@ -22,23 +22,33 @@ by adding an object with property `currency: false`. For example:
 var numberToString = require('number-to-cyrillic');
 
 numberToString.convert(21);
-// “Двадцять одна гривня нуль копійок”
+// “двадцять одна гривня нуль копійок”
 
 numberToString.convert(34.52, {
   currency: false
 });
-// "Тридцять чотири цілих п'ятдесят дві сотих"
+// "тридцять чотири цілих п'ятдесят дві сотих"
+
+numberToString.convert(76.20, {
+  capitalize: true
+});
+// "Сімдесят шість гривень двадцять копійок"
 ```
+
 See detailed description of all available options below:
 
-| Option name | Description                                                                               | Default value        |
-|-------------|-------------------------------------------------------------------------------------------|----------------------|
-| currency    | By setting a value for this option to `false` you might remove displaying currency name beside the number | **true** |
-
+| Option  | Default Value  | Description  |
+|:-------:|:--------------:|--------------|
+| currency| **true**       |By setting a value for this option to `false` you might remove displaying currency name beside the number
+|capitalize| **false** | By setting a value for this option to `true` you might make the first letter in uppercase 
 
 ## Change Log
 
-### 1.1.*
+### 1.2.0
+
+- Ability to make the first letter in uppercase
+
+### 1.1.0
 
 - Ability to convert numbers to string either like currency or just like plain number by adding an option
 - Update README.md with ROADMAP and options description
