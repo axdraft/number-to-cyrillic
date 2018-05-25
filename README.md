@@ -22,7 +22,7 @@ by adding an object with property `currency: false`. For example:
 var numberToString = require('number-to-cyrillic');
 
 numberToString.convert(21);
-// “двадцять одна гривня нуль копійок”
+// "двадцять одна гривня нуль копійок"
 
 numberToString.convert(34.52, {
   currency: false
