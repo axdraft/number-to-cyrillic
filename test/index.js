@@ -429,6 +429,20 @@ describe('Test all test-cases with default options', function () {
       currency: 'гривень'
     });
   });
+
+  it('should display correct value for 1000000', function () {
+    expect(number2String(1000000)).to.deep.equal({
+      value: 'один мільйон',
+      currency: 'гривень'
+    });
+  });
+
+  it('should display correct value for 230000', function () {
+    expect(number2String(230000)).to.deep.equal({
+      value: 'двісті тридцять тисяч',
+      currency: 'гривень'
+    });
+  });
 });
 
 describe('Test all test-cases with currency usd', function () {
