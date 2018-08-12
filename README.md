@@ -15,24 +15,24 @@ This library supports only Ukrainian language so far.
 
 ### `.convert(number[, options])`
 
-Converts an integer into a string. Optionally you can decide whether to display output with currency or not
-by adding an object with property `currency: false`. For example:
+Converts an integer into an object witch contain value and the currency name. Optionally you can decide whether to display output with currency or not, to display a capital letter for the value
+by adding an object with some propertis. For example:
 
 ```js
 var numberToString = require('number-to-cyrillic');
 
 numberToString.convert(21);
-// "двадцять одна гривня нуль копійок"
+// { value: "двадцять одна", currency: "гривня" }
 
-numberToString.convert(34.52, {
-  currency: false
+numberToString.convert(34, {
+  currentCurrency: 'usd'
 });
-// "тридцять чотири цілих п'ятдесят дві сотих"
+// { value: "тридцять чотири", currency: "долари США" }
 
-numberToString.convert(76.20, {
+numberToString.convert(76, {
   capitalize: true
 });
-// "Сімдесят шість гривень двадцять копійок"
+// { value: "Сімдесят шість", currency: "гривень" }
 ```
 
 See detailed description of all available options below:
@@ -41,3 +41,4 @@ See detailed description of all available options below:
 |:-------:|:--------------:|--------------|
 | currency| **true**       |By setting a value for this option to `false` you might remove displaying currency name beside the number
 |capitalize| **false** | By setting a value for this option to `true` you might make the first letter in uppercase 
+|currentCurrency| **`'uah'`** | By setting a value to this option to `'usd'` or `'eur'` you'll get the output for selected currency name.
