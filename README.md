@@ -22,23 +22,43 @@ by adding an object with some propertis. For example:
 var numberToString = require('number-to-cyrillic');
 
 numberToString.convert(21);
-// { value: "двадцять одна", currency: "гривня" }
+// {
+//    convertedInteger: 'двадцять одна',
+//    integerCurrency: 'гривня',
+//    convertedFractional: 'нуль',
+//    fractionalCurrency: 'копійок',
+//    integer: 21,
+//    fractional: 0 
+// }
 
 numberToString.convert(34, {
-  currentCurrency: 'usd'
+  currency: 'usd'
 });
-// { value: "тридцять чотири", currency: "долари США" }
+// {
+//    convertedInteger: 'тридцять чотири',
+//    integerCurrency: 'долари США',
+//    convertedFractional: 'нуль',
+//    fractionalCurrency: 'центів',
+//    integer: 34,
+//    fractional: 0 
+// }
 
-numberToString.convert(76, {
+numberToString.convert(76.21, {
   capitalize: true
 });
-// { value: "Сімдесят шість", currency: "гривень" }
+// {
+//    convertedInteger: 'Сімдесят шість',
+//    integerCurrency: 'гривень',
+//    convertedFractional: 'двадцять одна',
+//    fractionalCurrency: 'копійка',
+//    integer: 76,
+//    fractional: 21 
+// }
 ```
 
 See detailed description of all available options below:
 
 | Option  | Default Value  | Description  |
 |:-------:|:--------------:|--------------|
-| currency| **true**       |By setting a value for this option to `false` you might remove displaying currency name beside the number
 |capitalize| **false** | By setting a value for this option to `true` you might make the first letter in uppercase 
-|currentCurrency| **`'uah'`** | By setting a value to this option to `'usd'` or `'eur'` you'll get the output for selected currency name.
+|currency| **`'uah'`** | By setting a value to this option to `'usd'` or `'eur'` or `false` you'll get the output for selected currency name or without currency.
