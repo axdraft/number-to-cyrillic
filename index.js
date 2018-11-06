@@ -16,5 +16,11 @@ exports.convert = function (value, options) {
 
   if (stringRegExp.test(value)) { throw new Error('String should be a valid number!'); }
 
+  //
+  // Replace comma value with the dot and all spaces with no-spaces
+  // It will allow us to correctly parse numbers
+  //
+  value = value.replace(',', '.').replace(/ /g, '');
+
   return numberToString(value, options);
 };
