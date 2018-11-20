@@ -5,7 +5,7 @@
 [![npm version](https://badge.fury.io/js/number-to-cyrillic.svg)](https://badge.fury.io/js/number-to-cyrillic)
 
 Converts number to cyrillic.
-This library supports only Ukrainian language so far.
+This library supports Ukrainian, English and Russian languages.
 
 ## Install
 
@@ -28,7 +28,8 @@ numberToString.convert(21);
 //    convertedFractional: 'нуль',
 //    fractionalCurrency: 'копійок',
 //    integer: 21,
-//    fractional: 0 
+//    fractional: 0,
+//    shortName: 'грн.'
 // }
 
 numberToString.convert(34, {
@@ -40,7 +41,8 @@ numberToString.convert(34, {
 //    convertedFractional: 'нуль',
 //    fractionalCurrency: 'центів',
 //    integer: 34,
-//    fractional: 0 
+//    fractional: 0,
+//    shortName: 'долара США' 
 // }
 
 numberToString.convert(76.21, {
@@ -52,7 +54,21 @@ numberToString.convert(76.21, {
 //    convertedFractional: 'двадцять одна',
 //    fractionalCurrency: 'копійка',
 //    integer: 76,
-//    fractional: 21 
+//    fractional: 21,
+//    shortName: 'грн.'
+// }
+
+numberToString.convert(76.26, {
+  language: 'en'
+});
+// {
+//    convertedInteger: 'seventy-six',
+//    integerCurrency: 'hryvnias',
+//    convertedFractional: 'twenty six',
+//    fractionalCurrency: 'cent',
+//    integer: 76,
+//    fractional: 26,
+//    shortName: 'UAH'
 // }
 ```
 
@@ -62,3 +78,4 @@ See detailed description of all available options below:
 |:-------:|:--------------:|--------------|
 |capitalize| **false** | By setting a value for this option to `true` you might make the first letter in uppercase 
 |currency| **`'uah'`** | By setting a value to this option to `'usd'` or `'eur'` or `false` you'll get the output for selected currency name or without currency.
+|language| **`'ua'`** | By setting a value to this option to `'en'` or `'ru'` you'll get the output for selected language.
