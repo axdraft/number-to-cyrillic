@@ -1,4 +1,4 @@
-var numberToString = require('./lib/numberToString');
+var numberToString = require('./dist/numberToString.min');
 /**
  * Converts number to text
  *
