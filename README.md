@@ -1,6 +1,6 @@
 [![NPM](https://nodei.co/npm/number-to-cyrillic.png)](https://www.npmjs.com/package/number-to-cyrillic)
 
-# Convert number to English, Russian or Ukraine
+# Convert number to English, Russian or Ukrainian
 
 [![npm version](https://badge.fury.io/js/number-to-cyrillic.svg)](https://badge.fury.io/js/number-to-cyrillic)
 
