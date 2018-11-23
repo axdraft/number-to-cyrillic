@@ -69,7 +69,7 @@ numberToString.convert(76.26, {
 //    convertedInteger: 'seventy-six',
 //    integerCurrency: 'hryvnias',
 //    convertedFractional: 'twenty-six',
-//    fractionalCurrency: 'cent',
+//    fractionalCurrency: 'cents',
 //    integer: 76,
 //    fractional: 26,
 //    shortName: 'UAH'
