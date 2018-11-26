@@ -20,7 +20,7 @@ exports.convert = function (value, options) {
   // Replace comma value with the dot and all spaces with no-spaces
   // It will allow us to correctly parse numbers
   //
-  value = value.replace(',', '.').replace(/ /g, '');
+  value = +value.replace(',', '.').replace(/ /g, '');
 
   return numberToString(value, options);
 };
