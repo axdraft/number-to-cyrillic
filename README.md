@@ -1,6 +1,6 @@
 [![NPM](https://nodei.co/npm/number-to-cyrillic.png)](https://www.npmjs.com/package/number-to-cyrillic)
 
-# Convert number to English, Russian or Ukraine
+# Convert number to English, Russian or Ukrainian
 
 [![npm version](https://badge.fury.io/js/number-to-cyrillic.svg)](https://badge.fury.io/js/number-to-cyrillic)
 
@@ -69,7 +69,7 @@ numberToString.convert(76.26, {
 //    convertedInteger: 'seventy-six',
 //    integerCurrency: 'hryvnias',
 //    convertedFractional: 'twenty-six',
-//    fractionalCurrency: 'cent',
+//    fractionalCurrency: 'cents',
 //    integer: 76,
 //    fractional: 26,
 //    shortName: 'UAH'
