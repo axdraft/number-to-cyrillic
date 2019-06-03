@@ -4,7 +4,7 @@
 
 [![npm version](https://badge.fury.io/js/number-to-cyrillic.svg)](https://badge.fury.io/js/number-to-cyrillic)
 
-Converts number to words.
+Converts number to words (UAH, RUB, USD, EUR and without currency).
 This library supports English, Ukrainian and Russian languages.
 
 ## Install
@@ -81,5 +81,5 @@ See detailed description of all available options below:
 | Option  | Default Value  | Description  |
 |:-------:|:--------------:|--------------|
 |capitalize| **`false`** | By setting a value for this option to `true` you might make the first letter in uppercase 
-|currency| **`'uah'`** | By setting a value to this option to `'usd'` or `'eur'` or `false` you'll get the output for selected currency name or without currency.
+|currency| **`'uah'`** | By setting a value to this option to `'usd'` or `'eur'` or `'rub'` or `false` you'll get the output for selected currency name or without currency.
 |language| **`'ua'`** | By setting a value to this option to `'en'` or `'ru'` you'll get the output for selected language.
