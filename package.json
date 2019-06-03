@@ -1,6 +1,6 @@
 {
   "name": "number-to-cyrillic",
-  "version": "2.4.5",
+  "version": "2.4.6",
   "description": "Convert number to words.",
   "main": "index.js",
   "scripts": {
