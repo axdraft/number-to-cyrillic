@@ -25,14 +25,14 @@
     "cyrillic"
   ],
   "author": "Vadim Shashkov",
-  "license": "nolicense",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/vshashkov/number-to-cyrillic/issues"
   },
   "homepage": "https://github.com/vshashkov/number-to-cyrillic#README",
   "devDependencies": {
-    "chai": "^4.1.2",
-    "mocha": "^5.1.1",
-    "eslint": "^4.19.1"
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2",
+    "eslint": "^6.5.1"
   }
 }
