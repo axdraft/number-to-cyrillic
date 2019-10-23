@@ -11,6 +11,10 @@ This library supports English, Ukrainian and Russian languages.
 
 `npm install number-to-cyrillic`
 
+<br />
+
+`yarn add number-to-cyrillic`
+
 ## Demo
 
 You can try this library [here](https://numtoword.xyz).
@@ -46,7 +50,7 @@ numberToString.convert(34, {
 //    fractionalCurrency: 'центів',
 //    integer: 34,
 //    fractional: 0,
-//    shortName: 'долара США' 
+//    shortName: 'долара США'
 // }
 
 numberToString.convert(76.21, {
@@ -78,8 +82,9 @@ numberToString.convert(76.26, {
 
 See detailed description of all available options below:
 
-| Option  | Default Value  | Description  |
-|:-------:|:--------------:|--------------|
-|capitalize| **`false`** | By setting a value for this option to `true` you might make the first letter in uppercase 
-|currency| **`'uah'`** | By setting a value to this option to `'usd'` or `'eur'` or `'rub'` or `false` you'll get the output for selected currency name or without currency.
-|language| **`'ua'`** | By setting a value to this option to `'en'` or `'ru'` you'll get the output for selected language.
+|              Option              | Default Value | Description                                                                                                                                          |
+| :------------------------------: | :-----------: | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+|            capitalize            |  **`false`**  | By setting a value for this option to `true` you might make the first letter in uppercase                                                            |
+|             currency             |  **`'uah'`**  | By setting a value to this option to `'usd'` or `'eur'` or `'rub'` or `false` you'll get the output for selected currency name or without currency.  |
+|             language             |  **`'ua'`**   | By setting a value to this option to `'en'` or `'ru'` you'll get the output for selected language.                                                   |
+| customDecimalNameCasesForEnglish |  **`false`**  | By setting a value for this option to `true` you will change default decimal name cases for UAH and RUB in English translation to `kopek`, `kopeks`. |
