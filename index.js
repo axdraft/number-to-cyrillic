@@ -16,6 +16,10 @@ exports.convert = function (value, options) {
 
   if (stringRegExp.test(value)) { throw new Error('String should be a valid number!'); }
 
+  if (typeof value === 'number') {
+    value = value.toString();
+  }
+
   //
   // Replace comma value with the dot and all spaces with no-spaces
   // It will allow us to correctly parse numbers
