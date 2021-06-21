@@ -17,7 +17,7 @@ This library supports English, Ukrainian and Russian languages.
 
 ## Demo
 
-You can try this library [here](https://numtoword.xyz).
+You can try this library [here](https://npm.runkit.com/number-to-cyrillic).
 
 ## API
 
