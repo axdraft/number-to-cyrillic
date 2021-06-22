@@ -88,3 +88,4 @@ See detailed description of all available options below:
 |             currency             |  **`'uah'`**  | By setting a value to this option to `'usd'` or `'eur'` or `'rub'` or `false` you'll get the output for selected currency name or without currency.  |
 |             language             |  **`'ua'`**   | By setting a value to this option to `'en'` or `'ru'` you'll get the output for selected language.                                                   |
 | customDecimalNameCasesForEnglish |  **`false`**  | By setting a value for this option to `true` you will change default decimal name cases for UAH and RUB in English translation to `kopek`, `kopeks`. |
+| customCurrencyPrefixForEnglish |  **none**  | By setting a value for this option to a string you will change the default currency in English translation. E.g. without prefix: `dollars`, with - `US dollars` |
